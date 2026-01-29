@@ -35,7 +35,7 @@ if prompt := st.chat_input("Ask your mentor..."):
     # 2. Get AI Response
     try:
         completion = client.chat.completions.create(
-            model="llama3-8b-8192", 
+            model="llama-3.1-8b-instant", 
             messages=st.session_state.messages,
             temperature=0.7,
         )
